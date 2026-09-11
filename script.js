@@ -117,19 +117,30 @@ let ringX = mouseX;
 let ringY = mouseY;
 const dot = $('.cursor-dot');
 const ring = $('.cursor-ring');
+let cursorReady = false;
 
 function pointerMove(e) {
   mouseX = e.clientX;
   mouseY = e.clientY;
   root.style.setProperty('--mx', `${mouseX}px`);
   root.style.setProperty('--my', `${mouseY}px`);
-  if (finePointer) body.classList.add('cursor-active');
+  if (finePointer && !reducedMotion && dot && ring) {
+    if (!cursorReady) {
+      cursorX = ringX = mouseX;
+      cursorY = ringY = mouseY;
+      dot.style.left = ring.style.left = `${mouseX}px`;
+      dot.style.top = ring.style.top = `${mouseY}px`;
+      root.classList.add('custom-cursor-ready');
+      cursorReady = true;
+    }
+    body.classList.add('cursor-active');
+  }
 }
 addEventListener('pointermove', pointerMove, { passive:true });
 addEventListener('pointerdown', () => body.classList.add('cursor-down'), { passive:true });
 addEventListener('pointerup', () => body.classList.remove('cursor-down'), { passive:true });
 
-if (finePointer && !reducedMotion) {
+if (finePointer && !reducedMotion && dot && ring) {
   $$('a,button,input,.interactive-card').forEach(el => {
     el.addEventListener('pointerenter', () => body.classList.add('cursor-hover'));
     el.addEventListener('pointerleave', () => body.classList.remove('cursor-hover'));
@@ -140,8 +151,10 @@ if (finePointer && !reducedMotion) {
     cursorY += (mouseY - cursorY) * .45;
     ringX += (mouseX - ringX) * .14;
     ringY += (mouseY - ringY) * .14;
-    if (dot) dot.style.transform = `translate3d(${cursorX}px,${cursorY}px,0)`;
-    if (ring) ring.style.transform = `translate3d(${ringX}px,${ringY}px,0)`;
+    dot.style.left = `${cursorX}px`;
+    dot.style.top = `${cursorY}px`;
+    ring.style.left = `${ringX}px`;
+    ring.style.top = `${ringY}px`;
     requestAnimationFrame(animateCursor);
   };
   animateCursor();
