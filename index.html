@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0d0c" />
+  <meta name="description" content="MeGamerz — notícias, reviews e cultura gamer em ritmo de lançamento." />
+  <title>MeGamerz — Notícias, reviews e cultura gamer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" id="topo">
+    <a class="brand" href="#topo" aria-label="MeGamerz, início">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span>MeGamerz</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Principal">
+      <a href="#ultimas">Últimas</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#radar">Radar</a>
+      <a href="#esports">eSports</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" type="button" data-search-open aria-label="Abrir busca">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m1.35-5.65a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/></svg>
+      </button>
+      <button class="menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span><b>Menu</b>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <p class="eyebrow">Navegue</p>
+      <a href="#ultimas">01 <span>Últimas notícias</span></a>
+      <a href="#reviews">02 <span>Reviews</span></a>
+      <a href="#radar">03 <span>Radar de lançamentos</span></a>
+      <a href="#esports">04 <span>eSports</span></a>
+      <div class="menu-meta">MeGamerz / edição digital independente</div>
+    </div>
+  </div>
+
+  <div class="search-panel" role="dialog" aria-modal="true" aria-label="Busca" aria-hidden="true">
+    <button class="search-close" type="button" data-search-close aria-label="Fechar busca">Fechar ×</button>
+    <div class="search-inner">
+      <p class="eyebrow">Encontre rápido</p>
+      <label for="site-search">O que você quer jogar hoje?</label>
+      <div class="search-line">
+        <input id="site-search" type="search" autocomplete="off" placeholder="Ex.: RPG, portátil, indie..." />
+        <span aria-hidden="true">↗</span>
+      </div>
+      <p class="search-hint">A busca filtra as notícias desta edição em tempo real.</p>
+    </div>
+  </div>
+
+  <main id="conteudo">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-kicker reveal">
+        <span>EDIÇÃO 091</span>
+        <span>SET / 2026</span>
+        <span>BRASIL</span>
+      </div>
+
+      <div class="hero-grid">
+        <article class="hero-main reveal" data-tilt>
+          <div class="media-wrap">
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1600&q=85" alt="Arena de jogos competitivos iluminada" />
+            <div class="media-noise" aria-hidden="true"></div>
+          </div>
+          <div class="hero-copy">
+            <div class="meta-row"><span class="tag">Especial</span><span>8 min</span></div>
+            <h1 id="hero-title">A nova geração quer <em>jogar diferente.</em></h1>
+            <p>Menos fórmula pronta, mais identidade: os estúdios que estão redesenhando a forma de descobrir, jogar e compartilhar mundos digitais.</p>
+            <a class="text-link magnetic" href="#ultimas">Ler reportagem <span>↗</span></a>
+          </div>
+        </article>
+
+        <aside class="hero-stack" aria-label="Destaques">
+          <article class="stack-card reveal" data-tilt>
+            <span class="index">01</span>
+            <div>
+              <span class="tag tag-dark">Hardware</span>
+              <h2>Portáteis deixaram de ser plano B — e 2026 prova isso.</h2>
+              <p>5 min · análise</p>
+            </div>
+          </article>
+          <article class="stack-card image-card reveal" data-tilt>
+            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1000&q=85" alt="Pessoa jogando videogame com controle" loading="lazy" />
+            <div class="image-card-copy">
+              <span class="tag">Indie</span>
+              <h2>Jogos pequenos, ideias gigantes.</h2>
+            </div>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Assuntos em alta">
+      <div class="ticker-track">
+        <span>EM ALTA</span><b>◈</b><span>RPG</span><b>◈</b><span>PORTÁTEIS</span><b>◈</b><span>INDIES</span><b>◈</b><span>ESPORTS</span><b>◈</b><span>MODS</span><b>◈</b><span>EM ALTA</span><b>◈</b><span>RPG</span><b>◈</b><span>PORTÁTEIS</span><b>◈</b><span>INDIES</span><b>◈</b><span>ESPORTS</span><b>◈</b><span>MODS</span><b>◈</b>
+      </div>
+    </section>
+
+    <section class="latest shell" id="ultimas" aria-labelledby="latest-title">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Feed editorial</p>
+          <h2 id="latest-title">Últimas <span>notícias.</span></h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filtrar notícias">
+          <button class="filter is-active" data-filter="all">Tudo</button>
+          <button class="filter" data-filter="pc">PC</button>
+          <button class="filter" data-filter="console">Console</button>
+          <button class="filter" data-filter="indie">Indie</button>
+        </div>
+      </div>
+
+      <div class="news-grid" data-news-grid>
+        <article class="news-card news-card-wide reveal" data-category="pc indie" data-title="O renascimento dos immersive sims vem dos indies">
+          <a class="news-media beam" href="#">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1400&q=85" alt="Setup gamer com estética retrô" loading="lazy" />
+            <span class="card-number">01</span>
+          </a>
+          <div class="news-body">
+            <div class="meta-row"><span class="tag">PC / Indie</span><span>7 min</span></div>
+            <h3>O renascimento dos immersive sims vem de onde ninguém esperava.</h3>
+            <p>Liberdade sistêmica voltou ao centro das ideias — agora com equipes menores e risco criativo maior.</p>
+          </div>
+        </article>
+
+        <article class="news-card reveal" data-category="console" data-title="O controle virou plataforma">
+          <a class="news-media beam" href="#">
+            <img src="https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=1000&q=85" alt="Controle de videogame sobre mesa" loading="lazy" />
+            <span class="card-number">02</span>
+          </a>
+          <div class="news-body">
+            <div class="meta-row"><span class="tag">Console</span><span>4 min</span></div>
+            <h3>O controle virou plataforma: por que input agora é diferencial.</h3>
+          </div>
+        </article>
+
+        <article class="news-card reveal" data-category="pc" data-title="PC compacto já não é nicho">
+          <a class="news-media beam" href="#">
+            <img src="https://images.unsplash.com/photo-1593640495253-23196b27a87f?auto=format&fit=crop&w=1000&q=85" alt="Setup compacto com notebook e tela" loading="lazy" />
+            <span class="card-number">03</span>
+          </a>
+          <div class="news-body">
+            <div class="meta-row"><span class="tag">Hardware</span><span>6 min</span></div>
+            <h3>PC compacto já não é nicho. É resposta ao jeito que a gente vive.</h3>
+          </div>
+        </article>
+
+        <article class="news-card reveal" data-category="indie console" data-title="Pixel art deixou de olhar para trás">
+          <a class="news-media beam" href="#">
+            <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=1000&q=85" alt="Controle de videogame em ambiente neon" loading="lazy" />
+            <span class="card-number">04</span>
+          </a>
+          <div class="news-body">
+            <div class="meta-row"><span class="tag">Design</span><span>5 min</span></div>
+            <h3>Pixel art deixou de olhar para trás e começou a inventar o futuro.</h3>
+          </div>
+        </article>
+
+        <article class="news-card news-card-wide reveal" data-category="pc console" data-title="Crossplay amadureceu e mudou comunidades">
+          <a class="news-media beam" href="#">
+            <img src="https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?auto=format&fit=crop&w=1400&q=85" alt="Jogadores em computadores durante campeonato" loading="lazy" />
+            <span class="card-number">05</span>
+          </a>
+          <div class="news-body">
+            <div class="meta-row"><span class="tag">Online</span><span>9 min</span></div>
+            <h3>Crossplay amadureceu. A próxima batalha é preservar comunidades.</h3>
+            <p>O multiplayer sem fronteiras virou padrão, mas moderação e identidade ainda têm muito a evoluir.</p>
+          </div>
+        </article>
+      </div>
+      <p class="no-results" hidden>Nenhuma notícia desta edição corresponde à busca.</p>
+    </section>
+
+    <section class="reviews" id="reviews" aria-labelledby="reviews-title">
+      <div class="shell">
+        <div class="reviews-head reveal">
+          <p class="eyebrow">Crítica sem nota inflada</p>
+          <h2 id="reviews-title">Vale seu <span>tempo?</span></h2>
+          <p>Reviews diretas, contexto suficiente e uma pergunta simples: quem vai amar isso?</p>
+        </div>
+
+        <div class="review-rail">
+          <article class="review-card reveal" data-tilt>
+            <div class="score" style="--score: 92"><strong>9.2</strong><span>essencial</span></div>
+            <div class="review-copy"><span class="tag tag-dark">RPG</span><h3>Um mundo que respeita sua curiosidade.</h3><p>“Raramente um mapa aberto parece tão intencional.”</p></div>
+          </article>
+          <article class="review-card reveal" data-tilt>
+            <div class="score" style="--score: 84"><strong>8.4</strong><span>ótimo</span></div>
+            <div class="review-copy"><span class="tag tag-dark">Ação</span><h3>Precisão mecânica acima do espetáculo.</h3><p>“Quando para de falar e deixa você jogar, brilha.”</p></div>
+          </article>
+          <article class="review-card reveal" data-tilt>
+            <div class="score" style="--score: 78"><strong>7.8</strong><span>bom</span></div>
+            <div class="review-copy"><span class="tag tag-dark">Co-op</span><h3>Bagunçado do melhor jeito — com amigos.</h3><p>“Impreciso sozinho, inesquecível em grupo.”</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="radar shell" id="radar" aria-labelledby="radar-title">
+      <div class="section-head reveal">
+        <div><p class="eyebrow">Próximas semanas</p><h2 id="radar-title">Radar de <span>lançamentos.</span></h2></div>
+        <p class="section-note">Uma agenda curta. Só o que vale acompanhar.</p>
+      </div>
+
+      <div class="release-list">
+        <article class="release-row reveal">
+          <time datetime="2026-09-18"><strong>18</strong><span>SET</span></time>
+          <div><span class="tag">PC · PS5</span><h3>Project Nightshift</h3></div>
+          <p>Action RPG / sci-fi</p><span class="release-arrow">↗</span>
+        </article>
+        <article class="release-row reveal">
+          <time datetime="2026-09-24"><strong>24</strong><span>SET</span></time>
+          <div><span class="tag">PC · XBOX</span><h3>Low Orbit</h3></div>
+          <p>Simulação / estratégia</p><span class="release-arrow">↗</span>
+        </article>
+        <article class="release-row reveal">
+          <time datetime="2026-10-02"><strong>02</strong><span>OUT</span></time>
+          <div><span class="tag">SWITCH · PC</span><h3>Tiny Giants</h3></div>
+          <p>Indie / aventura</p><span class="release-arrow">↗</span>
+        </article>
+        <article class="release-row reveal">
+          <time datetime="2026-10-09"><strong>09</strong><span>OUT</span></time>
+          <div><span class="tag">MULTI</span><h3>District Zero</h3></div>
+          <p>Tático / multiplayer</p><span class="release-arrow">↗</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="esports shell" id="esports" aria-labelledby="esports-title">
+      <div class="esports-panel reveal">
+        <div class="esports-copy">
+          <p class="eyebrow">eSports / leitura longa</p>
+          <h2 id="esports-title">A arena ficou maior que o palco.</h2>
+          <p>Como transmissões interativas, co-streaming e comunidades locais mudaram o valor de assistir competitivo.</p>
+          <a class="pill-link magnetic" href="#">Abrir especial <span>↗</span></a>
+        </div>
+        <div class="orbit" aria-hidden="true">
+          <div class="orbit-ring orbit-a"><i></i></div>
+          <div class="orbit-ring orbit-b"><i></i></div>
+          <div class="orbit-core">GG</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter shell reveal" aria-labelledby="newsletter-title">
+      <div>
+        <p class="eyebrow">1 e-mail por semana. Sem spam.</p>
+        <h2 id="newsletter-title">O melhor do jogo, <span>sem grind.</span></h2>
+      </div>
+      <form class="newsletter-form" data-newsletter>
+        <label class="sr-only" for="email">Seu e-mail</label>
+        <input id="email" type="email" required placeholder="voce@email.com" />
+        <button type="submit" class="magnetic">Entrar na party <span>↗</span></button>
+      </form>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div><a class="brand brand-footer" href="#topo"><span class="brand-mark">M</span><span>MeGamerz</span></a><p>Notícias, reviews e cultura gamer com recorte editorial.</p></div>
+      <div><p class="footer-title">Seções</p><a href="#ultimas">Notícias</a><a href="#reviews">Reviews</a><a href="#radar">Radar</a><a href="#esports">eSports</a></div>
+      <div><p class="footer-title">Projeto</p><a href="https://github.com/Sanderapps/testetech" rel="noreferrer">GitHub ↗</a><span>Fotos: Unsplash</span><span>MeGamerz © 2026</span></div>
+      <div class="footer-big">PLAY<br>LOUD.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
